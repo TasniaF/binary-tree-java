@@ -1,10 +1,11 @@
 Binary Tree Implementation in Java
 
-A beginner-friendly Java implementation of a Binary Tree using classes, object references, arrays, and recursion.
+ Java implementation of a Binary Tree using classes, object references, arrays, and recursion.
 
 This project was created to practice the fundamentals of binary trees and understand how recursive methods can be used to construct a tree from a preorder representation.
 
-_______________________________________________________________________________________________________________Project Overview
+_______________________________________________________________________________________________________________
+Project Overview
 
 The program builds a binary tree from an integer array.
 
@@ -31,7 +32,8 @@ int[] nodes = {
     3, -1,
     6, -1, -1
 };
-_______________________________________________________________________________________________________________Tree Representation
+_______________________________________________________________________________________________________________
+Tree Representation
 
 The input:
 
@@ -54,7 +56,8 @@ Each number represents a node.
 
 Each -1 represents a missing child.
 
-_______________________________________________________________________________________________________________Node Structure
+_______________________________________________________________________________________________________________
+Node Structure
 
 Each tree node is represented by the Node class:
 
@@ -84,7 +87,8 @@ Conceptually:
         /  |  \
        /   |   \
     left data right
-_______________________________________________________________________________________________________________How buildTree() Works
+_______________________________________________________________________________________________________________
+How buildTree() Works
 
 The buildTree() method uses recursion to construct the tree.
 
@@ -140,7 +144,8 @@ return newNode;
 
 The completed node is returned to the previous recursive call.
 
-_______________________________________________________________________________________________________________Recursion Pattern
+_______________________________________________________________________________________________________________
+Recursion Pattern
 
 The most important idea in this project is:
 
@@ -157,7 +162,8 @@ The most important idea in this project is:
 
 The recursion continues until it encounters -1.
 
-_______________________________________________________________________________________________________________Example Walkthrough
+_______________________________________________________________________________________________________________
+Example Walkthrough
 
 For this input:
 
@@ -194,7 +200,8 @@ It reaches another -1, so 4 has no right child either.
 
 The same process continues for the rest of the tree.
 
-_______________________________________________________________________________________________________________Current Program Output
+_______________________________________________________________________________________________________________
+Current Program Output
 
 The current version of the program prints the root node:
 
@@ -206,7 +213,8 @@ Output:
 
 The tree itself is stored in memory through the Node objects and their left and right references.
 
-_______________________________________________________________________________________________________________Project Structure
+_______________________________________________________________________________________________________________
+Project Structure
 Binarytrees.java/
 │
 ├── src/
@@ -214,11 +222,9 @@ Binarytrees.java/
 │
 └── README.md
 
-Depending on the VS Code Java project setup, your generated files such as bin/ may also appear locally.
+_________________________________________________________________________________________________________
+Running the Project in VS Code
 
-Generated files should generally not be pushed to GitHub.
-
-_______________________________________________________________________________________________________________Running the Project in VS Code
 Requirements
 Java Development Kit (JDK)
 VS Code
@@ -242,13 +248,17 @@ Or use the VS Code Run button
 The program should print:
 
 1
-🛠️ Technologies
+
+_______________________________________________________________________________________________________________
+Technologies
+
 Java
 Object-Oriented Programming
 Recursion
 Binary Trees
 Arrays
-_______________________________________________________________________________________________________________Concepts Practiced
+_______________________________________________________________________________________________________________
+Concepts Practiced
 
 This project helped me practice:
 
@@ -261,9 +271,11 @@ Representing missing tree nodes with null
 Understanding preorder tree representation
 Debugging Java errors
 Understanding ArrayIndexOutOfBoundsException
-_______________________________________________________________________________________________________________Debugging Experience
+_______________________________________________________________________________________________________________
+Debugging Experience
 
 While building this program, one important error was:
+
 
 ArrayIndexOutOfBoundsException
 
@@ -281,7 +293,9 @@ causes an ArrayIndexOutOfBoundsException.
 
 This helped me understand that the preorder representation needs enough -1 values to represent missing children and properly stop the recursion.
 
-_______________________________________________________________________________________________________________Future Improvements
+_______________________________________________________________________________________________________________
+Future Improvements
+
 
 I plan to extend this project as I learn more about binary trees.
 
@@ -309,13 +323,15 @@ Add unit tests
 
 Improve input handling
 
-_______________________________________________________________________________________________________________Learning Goal
+_______________________________________________________________________________________________________________
+Learning Goal
 
 The main goal of this project is to build a stronger understanding of binary trees and recursion through implementation rather than only studying the theory.
 
 As I learn additional tree algorithms, I will continue expanding this project.
 
-_______________________________________________________________________________________________________________Author
+_______________________________________________________________________________________________________________
+Author
 
 Fairooz Farzana
 
